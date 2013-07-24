@@ -1,0 +1,13 @@
+<%= form_for @survey do |survey_form| %>
+  <%= survey_form.label :name, "Name" %>
+  <%= survey_form.text_field :name %><br>
+
+  <div class="question_form">
+    <%= survey_form.fields_for :questions do |question_fields| %>
+      <%= question_fields.label :content, "Question content:" %>
+      <%= question_fields.text_field :content %>
+    <% end %>
+  </div><br>
+
+  <%= survey_form.submit "Submit"%>
+<% end %>

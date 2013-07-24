@@ -7,6 +7,4 @@ feature "Survey management" do
     # click_link 'Create Survey'
   end
   scenario "User answers and submits a survey"
-
-  
 end
